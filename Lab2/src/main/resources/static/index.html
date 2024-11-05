@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequency Analysis Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Cryptography Frequency Analysis Tool</h1>
+
+    <!-- Input section -->
+    <div class="input-section">
+        <textarea id="inputText" placeholder="Enter encrypted text..."></textarea>
+        <button id="analyzeButton">Analyze</button>
+    </div>
+
+    <!-- English frequency table -->
+    <div id="englishFrequencySection" class="hidden">
+        <h2>English Letter Frequency</h2>
+        <table id="englishFrequencyTable">
+            <thead>
+            <tr>
+                <th>Letter</th>
+                <th>English Frequency (%)</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Text frequency and replacement table -->
+    <div id="textFrequencySection" class="hidden">
+        <h2>Text Letter Frequency</h2>
+        <table id="textFrequencyTable">
+            <thead>
+            <tr>
+                <th>Letter</th>
+                <th>Text Frequency (%)</th>
+                <th>Replace With</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Convert button -->
+    <div id="convertSection" class="hidden">
+        <button id="convertButton">Convert</button>
+        <div id="outputTextContainer">
+            <h3>Decrypted Text:</h3>
+            <p id="outputText"></p>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
